@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+    <div class="form">
+        <h1>Generador de codigo QR</h1>
+        <form>
+            <input type="url" name="website" id="website" placeholder="Agrega cualquier URL" required>
+
+            <div class="qrcode-container">
+                <div id="qrcode" class="qrcode"></div>
+            </div>
+
+            <button type="button" onclick="generateQRCode()">
+            Generar QR
+            </button>
+
+            <a class="ch" href="https://twitter.com/thecharly8">Mi Twitter =)</a>
+            <p>Practica #2 Generador de codigos QR</p>
+        </form>
+    </div>
+
+    <script src="assets/functions_QR.js"></script>
+</body>
+</html>
